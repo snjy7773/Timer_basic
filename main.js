@@ -3,28 +3,28 @@ var stop = document.querySelector("#stop");
 var h3 = document.querySelector("#h3");
 var li = document.createElement('li');
 var ul = document.querySelector("#ul")
-var  st;
+var st;
 var count;
-start.addEventListener("click", function(){
+start.addEventListener("click", function () {
     // alert("chala") 
-    
-    
-     count = 0;
-    st =  setInterval(function() {
-       
-       h3.textContent = count;
-       count++ 
-    } ,500) 
 
-    
+
+    count = 0;
+    st = setInterval(function () {
+
+        h3.textContent = count;
+        count++
+    }, 1000)
+
+
 })
 
-stop.addEventListener( "click", function(){
+stop.addEventListener("click", function () {
     clearInterval(st);
     li = document.createElement('li');
     ul.appendChild(li);
-    li.textContent = count - 1 ;
-    
+    li.textContent = count - 1;
+
 
 }
 )
