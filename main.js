@@ -14,7 +14,7 @@ start.addEventListener("click", function () {
 
         h3.textContent = count;
         count++
-    }, 1000)
+    }, 1500)
 
 
 })
@@ -23,7 +23,7 @@ stop.addEventListener("click", function () {
     clearInterval(st);
     li = document.createElement('li');
     ul.appendChild(li);
-    li.textContent = count - 1;
+    li.textContent = count -1;
 
 
 }
